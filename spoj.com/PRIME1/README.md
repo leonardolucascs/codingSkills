@@ -15,7 +15,7 @@ Iterate from `2` to `n - 1` (or `n` in this case) and check each number for prim
 
 **Auxiliary Space**: O(1)
 
--
+___
 
 **Naive approach (recursive)**: Recursion can also be used to check if a number between `2` to `n – 1` divides n. If we find any number that divides, we return false.
 
@@ -62,6 +62,7 @@ The idea is divide the range `[0..n-1]` (`[0..n]`) in different segments and com
 In Simple Sieve, we needed O(n) space which may not be feasible for large n. Here we need O(√n) space and we process smaller ranges at a time (locality of reference)
 
 **Time Complexity**: O(n * ln(sqrt(n)))
+
 **Ausiliary Space**: O(sqrt(n))
 
 
